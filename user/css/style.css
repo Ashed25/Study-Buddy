@@ -1,0 +1,449 @@
+.course-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-holder .card {
+  width: calc((100% / 3) - 30px);
+  margin: 15px;
+}
+
+.course-holder .card img {
+  height: 200px;
+}
+
+.course-holder .card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.course-desciption-holder {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.course-desciption-holder .upper {
+  display: flex;
+}
+
+.course-desciption-holder .lhs {
+  width: 50%;
+}
+
+.course-desciption-holder .lhs .course-img img {
+  width: 100%;
+}
+
+.course-desciption-holder .rhs {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.course-desciption-holder .course-title {
+  font-size: 30px;
+}
+
+.course-details-list {
+  margin: 30px 0px;
+  color: #555;
+}
+
+.course-details-list .course-details-name {
+  min-width: 60px;
+  color: #000;
+  padding-right: 20px;
+}
+
+.course-price-details span {
+  margin: 5px;
+  padding: 5px;
+}
+
+.course-price-details .price {
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 22px;
+}
+
+.course-price-details .mrp {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #555;
+}
+
+.course-price-details .discount {
+  background-color: #111;
+  color: #fff;
+  border-radius: 50%;
+  padding: 8px 5px;
+}
+
+.course-price-details .saving {
+  font-size: 22px;
+}
+
+.course-details .btn-success {
+  background-color: #1c6288;
+  font-size: 19px;
+  border-radius: 5px;
+  padding: 7px 14px;
+  border: 3px solid #000;
+}
+
+.btn-success:hover {
+  background-color: #13445e;
+  border: 3px solid #000;
+}
+
+.course-details .buy-now {
+  margin-top: 30px;
+}
+
+.course-details .cart {
+  margin-top: 30px;
+}
+
+.course-desciption-holder .description-holder {
+  color: #555;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+#mycourse .container {
+  min-height: 50vh;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  margin-top: 45px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  color: black;
+  background-color: #3498db;
+  padding-bottom: 0px;
+}
+
+footer ul {
+  padding-top: 10px;
+  list-style-type: none;
+  display: flex;
+}
+
+footer ul li {
+  width: 33%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+
+footer ul li h4 {
+  color: black;
+  margin-bottom: 2%;
+}
+
+footer ul li h4 span {
+  padding-bottom: 4px;
+  box-sizing: border-box;
+  border-bottom: 4.5px solid #fff;
+}
+
+footer ul li a {
+  color: white;
+}
+
+footer ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#f_input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5%;
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  margin-bottom: 2%;
+  border-radius: 3px;
+}
+
+#f_input i {
+  width: 10%;
+  color: #000;
+  text-align: center;
+}
+
+#f_input input {
+  border-width: 0px;
+  background: none;
+  outline: none;
+  height: 15px;
+  width: 88%;
+}
+
+#f_input textarea {
+  border-width: 0px;
+  background: none;
+  outline: none;
+  height: 15px;
+  width: 88%;
+  padding: 0px;
+  padding-bottom: 5px;
+}
+
+footer .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-box {
+  display: flex;
+}
+
+/* Video body left section */
+#leftmargin {
+  width: calc(25% - 1px);
+  overflow-y: auto;
+  border-right: 1px solid #000;
+}
+
+#leftmargin h3 {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  background-color: #e3f2fd;
+  padding: 12px 18px;
+  border-bottom: 1px solid #000;
+  margin: 0px;
+}
+
+.lectures-list ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.lectures-list ul li {
+  list-style: none;
+}
+
+.lectures-list ul li a {
+  border-bottom: 1px solid #000;
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 1px;
+  transition: 0.6s ease all;
+}
+
+.lectures-list ul li a:hover {
+  background-color: #e3f2fd;
+  color: #000;
+}
+
+.lectures-list ul li a.active {
+  background-color: #e3f2fd;
+  color: #000;
+}
+
+/* Video body right section */
+#bodyright {
+  width: 75%;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.pagination page-item page-link {
+  width: 100%;
+}
+
+.view-lecture {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.view-lecture .lecture-title {
+  margin-bottom: 10px;
+}
+
+.lefticon {
+  color: black;
+  float: left;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile div {
+  max-width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px 5px;
+}
+
+/* Add more specific styling to video containers */
+.card-body video {
+  width: 100%;
+  height: auto;
+  border: 1px solid #95a5a6;
+  margin-bottom: 15px; /* Adds space below the video */
+}
+
+/* Ensure the card itself is properly structured */
+.card.mb-3 {
+  margin-bottom: 20px;
+}
+
+/* Video progress bar container */
+.progress {
+  height: 20px;
+  background-color: #f2f2f2;
+}
+
+.progress-bar {
+  background-color: #28a745; /* Green color for completion */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+}
+
+.main-section {
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 0;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.modal-content {
+  background-color: #fff;
+  opacity: 0.8;
+  padding: 0 18px;
+  border-radius: 10px;
+}
+
+.user-img img {
+  height: 120px;
+  width: 120px;
+}
+
+.user-img {
+  margin-top: -60px;
+  margin-bottom: 45px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-input button {
+  width: 40%;
+  margin: 5px 0 25px;
+}
+
+.form-group input {
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding-left: 25px;
+}
+
+.btn-success {
+  background-color: #1c6288;
+  font-size: 19px;
+  border-radius: 5px;
+  padding: 7px 14px;
+  border: 1px solid #daf1ff;
+}
+
+.btn-success:hover {
+  background-color: #13445e;
+  border: 1px solid #daf1ff;
+}
+
+.login {
+  padding: 5px 0 25px;
+}
+
+.login a {
+  color: black;
+}
+
+.navbar .nav-item .nav-link.dropdown-toggle {
+  color: white !important;
+}
+.navbar .nav-item .nav-link.dropdown-toggle:hover {
+  color: #ddd !important; /* Slightly lighter on hover */
+}
+
+/* Rewards Page */
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card {
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.btn-warning {
+  font-weight: bold;
+}
+.course-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-holder .card {
+  width: calc((100% / 3) - 30px);
+  margin: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.course-holder .card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-holder .card-body {
+  padding: 15px;
+}
+
+.course-holder .card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.course-holder .btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.navbar .nav-item .nav-link {
+  color: white !important;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #ddd !important; /* Lighter color on hover */
+  text-decoration: none;
+}
+

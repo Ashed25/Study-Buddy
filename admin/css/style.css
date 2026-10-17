@@ -1,0 +1,468 @@
+@charset "utf-8";
+*{
+margin: 0px;
+padding: 0px;
+font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans";
+}
+
+/* header styling */
+
+#header{
+	width: 100%;
+	height: 60px;
+	background-color:#34ace0;
+}
+#logo{
+	width: 20%;
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: 14px;
+	padding-left: 70px;
+	box-sizing: border-box;
+	float: left;
+}
+#logo img{
+	width: 130px;
+	height:100%;
+}
+#title{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+#title h2{
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	//text-shadow: 3px 3px 3px #000;
+}
+#link{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+#link h2{
+	text-align: center;
+	line-height: 60px;	
+}
+#link h2 a{
+	text-decoration: none;
+	color: #f9ca24;
+}
+
+
+
+/* Left margin styling*/
+#leftmargin{
+	width: calc(20% - 1px);
+	height: 594px;
+	background-color:#34ace0;
+	float: left;  
+	overflow-y: auto;
+	border-right: 1px solid #00d2d3;
+}
+#leftmargin h3{
+	color: #000;
+	text-align: center;
+	font-size: 14px;
+	background-color:#e3f2fd;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom:2%;
+}	
+#leftmargin ul{
+	list-style-type: none;
+}
+#leftmargin ul li{
+	transition: all 0.3s;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5%;
+	box-sizing: border-box;
+}
+#leftmargin ul li a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-size: 13px;
+	transition: all 0.3s;
+
+}
+#leftmargin ul li a i{
+	margin-left: 5.5%;
+	width: 7.5%;
+}
+#leftmargin ul li:hover{
+	background-color:#e3f2fd;
+}
+#leftmargin ul li a:hover{
+	padding-left: 7%;
+	//box-sizing: border-box;
+}
+/*Right Side body Styling-------------------------------------------------------------*/
+#bodyright{
+	width: 80%;
+	min-height: 100vh; /* Allow content to expand dynamically */
+	background-color:#fff;
+	overflow-y: auto; 
+}
+#bodyright h3{
+	color: #000;
+	text-align: center;
+	font-size: 14px;
+	background-color: #e3f2fd;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 2%;
+}
+
+/*-----------------------------------------        Dashboard CSS --------------------------------**/
+#homebody .body-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: flex-start;
+    padding: 25px;
+}
+
+#homebody .box-holder{
+	width: calc(100% / 4);
+	padding: 20px;
+	box-sizing: border-box;
+}
+#homebody .box{
+	color: #000;
+	border-radius: 4px;
+	height: 100%;
+	//box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+#homebody .box:hover{
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+#homebody .box-upper{
+	padding: 20px;
+	display: flex;
+	height: 70px;
+}
+#homebody .box-upper .box-lhs{
+	width: 100%;
+	font-weight: 700;
+	letter-spacing: 1px;
+display: flex;
+align-items: center;
+flex-wrap: wrap;}
+#homebody .box-upper .box-lhs .box-name{
+	padding-right: 10px;
+}
+#homebody .box-upper .box-rhs{
+	width: 50px;
+}
+#homebody .box-upper .box-rhs .icon{
+	opacity: 0.6;
+}
+#homebody .box-upper .box-rhs .icon i{
+	font-size: 50px;
+}
+#homebody .box .view-more{
+	display: block;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(192,192,192,0.5);
+	color: inherit;
+	text-decoration: none;
+	border-radius: 0px 0px 4px 4px;
+	letter-spacing: 1px;
+}
+#homebody .box-holder:nth-child(1) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(2) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(3) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(4) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(5) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(6) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(7) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(8) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(9) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(10) .box{
+  background-color: #e3f2fd;
+}
+#homebody .box-holder:nth-child(11) .box{
+  background-color: #e3f2fd;
+}
+
+/* All categories page Styling */
+#add{
+	width: 100%;
+	padding: 2%;
+	box-sizing: border-box;
+}
+#add details{
+	width: 60%;
+	margin: auto;
+}
+#add details summary{
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	color: #000;
+	border:1px solid #000;
+	font-size: 14px;
+	line-height: 35px;
+	cursor: pointer;
+}
+#add details form{
+	background-color:#e3f2fd;
+	padding: 3%;
+	box-sizing: border-box;
+}
+#add details form input{
+	width: 100%;
+	height: 30px;
+	outline: none;
+	padding-left: 3%;
+	box-sizing: border-box; 
+	margin-bottom: 2%;
+	font-size: 14px;
+}
+#add details form select{
+	width: 100%;
+	height: 30px;
+	outline: none;
+	padding-left: 3%;
+	box-sizing: border-box; 
+	margin-bottom: 2%;
+	font-size: 14px;
+}
+#add details form textarea{
+	width: 100%;
+	height: 50px;
+	outline: none;
+	padding-left: 3%;
+	padding-top: 2%;
+	box-sizing: border-box; 
+	margin-bottom: 2%;
+	font-size: 14px;
+}
+#add details form button{
+	width: 30%;
+	height: 30px;
+	background:none;
+	outline: none;
+	border:1px solid #000;
+	font-size: 14px;
+}
+#add details form button:hover{
+	cursor: pointer;
+	color: #000;
+	background-color: #fff;
+	border:2px solid #000;
+
+}
+
+/*Categories Table Styling */
+#add table{
+	width: 100%;
+	margin-top:3%;
+}
+#add table tr th{
+	height: 35px;
+	padding-left: 2%;
+	background-color:#e3f2fd;
+	text-align:left;
+	box-sizing: border-box;
+}
+#add table tr td{
+	height: 30px;
+	padding-left: 2%;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+/* Styling Edit Categories Section */
+#edit_form{
+	width: 50%;
+	padding: 2%;
+	box-sizing: border-box;
+	margin: auto;
+}
+#edit_form input{
+	width: 100%;
+	height: 30px;
+	outline: none;
+	padding-left: 3%;
+	box-sizing: border-box; 
+	margin-bottom: 2%;
+	font-size: 14px;
+}
+#edit_form button{
+	width: 30%;
+	height: 30px;
+	background:none;
+	outline: none;
+	border:1px solid #000;
+	font-size: 14px;
+}
+#edit_form button:hover{
+	cursor: pointer;
+	color: #000;
+	background-color: #fff;
+	border:2.5px solid #000;
+}
+/* Styling for contact us page */
+#contact{
+	width: 100%;
+}
+#contact form table{
+	width: 70%;
+	padding: 40px;
+	box-sizing: border-box;
+	margin: auto;
+
+}
+#contact form table tr td{
+	width: 50%;
+	height: 35px;
+}
+#contact form table tr td input{
+	width: 100%;
+	height: 25px;
+	outline: none;
+	padding-left: 10px;
+}
+#contact button{
+	width: 20%;
+	height: 30px;
+	background:none;
+	outline: none;
+	border:1px solid #000;
+	font-size: 14px;
+	background-color:#e3f2fd;
+}
+#contact button:hover{
+	cursor: pointer;
+	color: #000;
+	font-size: 14.5px;
+	//background-color: #fff;
+	border:2.5px solid #000;
+}
+/*login css-----------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	
+	background-size: cover;
+}
+
+.main-section {
+	margin: 0 auto;
+	margin-top: 90px;
+	padding: 0;
+}
+.modal-content {
+	background-color: #34ace0;
+	opacity: .8;
+	padding: 0 18px;
+	border-radius: 10px;
+}
+.user-img img{
+	height: 120px;
+	width: 120px;
+}
+.user-img {
+	margin-top: -60px;
+	margin-bottom: 45px;
+}
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-input button {
+	width: 40%;
+	margin: 5px 0 25px;
+}
+.form-group input{
+	border-radius: 5px;
+	border: 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-left: 25px;
+}
+.btn-success {
+	background-color: #1c6288;
+	font-size: 19px;
+	border-radius: 5px;
+	padding: 7px 14px;
+	border: 1px solid #daf1ff;
+}
+.btn-success:hover {
+	background-color: #13445e;
+	border: 1px solid #daf1ff;
+}
+.forgot {
+	padding: 5px 0 25px;
+}
+.forgot a {
+	color: black;
+}
+
+.signup {
+	padding: 5px 0 25px;
+}
+.signup a{
+	color: black;
+}
+.card-img-top{
+	height: 50px;
+width: 80px;
+}
+.fees{
+	text-align: center;
+	margin-top: 20px;
+}
+.fees i{
+	font-size: 55px;
+}
+.fees h2{
+	font-weight: 500;
+	margin-bottom: -5px;
+	font-size: 25px;
+}
+.fees p{
+	font-size: 14px;
+	color: #555;
+}
+
+.approve-icon {
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+
+.reject-icon {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.reject-icon:hover {
+    color: darkred;
+}

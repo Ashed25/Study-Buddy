@@ -1,0 +1,49 @@
+/*body content*/ 
+.flex-box{
+	display: flex;
+}
+
+<i class="fa fa-bars" aria-hidden="true"></i>
+
+
+<div class="js-pride-month-gradient" style="width: 100%; height: 0.6rem; background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%) repeat scroll 0% 0">
+ </div> 
+
+<li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i> Terms & Conditions</a></li>
+
+		<li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About us</a></li>
+		
+
+#homebody .box-holder:nth-child(1) .box{
+  background-color: #0652DD;
+}
+#homebody .box-holder:nth-child(2) .box{
+  background-color: #D980FA;
+}
+#homebody .box-holder:nth-child(3) .box{
+  background-color: #EE5A24;
+}
+#homebody .box-holder:nth-child(4) .box{
+  background-color: #8e44ad;
+}
+#homebody .box-holder:nth-child(5) .box{
+  background-color: #c0392b;
+}
+#homebody .box-holder:nth-child(6) .box{
+  background-color: #f0932b;
+}
+#homebody .box-holder:nth-child(7) .box{
+  background-color: #22a6b3;
+}
+#homebody .box-holder:nth-child(8) .box{
+  background-color: #fbc531;
+}
+#homebody .box-holder:nth-child(9) .box{
+  background-color: #40739e;
+}
+#homebody .box-holder:nth-child(10) .box{
+  background-color: #55E6C1;
+}
+#homebody .box-holder:nth-child(11) .box{
+  background-color: #EA2027;
+}

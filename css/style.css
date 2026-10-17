@@ -1,0 +1,240 @@
+
+body {
+	padding: 0;
+	margin: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	color: #666666;
+	line-height: 1.42857143;
+}
+
+/*header styling ----------------------------------------------*/
+nav .fixed-top{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1030;
+}
+
+nav navbar-collapse ul a span .span-item{
+	padding-bottom: 4px;
+	box-sizing: border-box;
+	border-bottom: 4.5px solid #000;
+
+}
+
+/* singup------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	
+	background-size: cover; 
+}
+
+.main-section {
+	margin: 0 auto;
+	margin-top: 90px;
+	padding: 0;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.modal-content {
+	background-color: #fff;
+	opacity: .8;
+	padding: 0 18px;
+	border-radius: 10px;
+}
+.user-img img{
+	height: 120px;
+	width: 120px;
+}
+.user-img {
+	margin-top: -60px;
+	margin-bottom: 45px;
+}
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-input button {
+	width: 40%;
+	margin: 5px 0 25px;
+}
+.form-group input{
+	border-radius: 5px;
+	border: 1px solid #000;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-left: 25px;
+}
+.btn-success {
+	background-color: #1c6288;
+	font-size: 19px;
+	border-radius: 5px;
+	padding: 7px 14px;
+	border: 1px solid #daf1ff;
+}
+.btn-success:hover {
+	background-color: #13445e;
+	border: 1px solid #daf1ff;
+}
+
+.login{
+	padding: 5px 0 25px;
+}
+.login a{
+	color: black;
+}
+
+/* login -------------------------------------------------------------------------------------*/
+.forgot {
+	padding: 5px 0 25px;
+}
+.forgot a {
+	color: black;
+}
+
+.signup {
+	padding: 5px 0 25px;
+}
+.signup a{
+	color: black;
+}
+
+
+/* Footer ------------------------------------------------------------------------------------*/
+footer{
+	width: 100%;
+	box-sizing: border-box;
+    padding: 20px 30px;
+    color:black;
+    background-color: #3498db;
+    padding-bottom: 0px;
+
+}
+footer ul{
+	padding-top: 10px;
+	list-style-type: none;
+	display: flex;
+}
+footer ul li{
+	width: 33%;
+	padding-right: 5%;
+	box-sizing: border-box;
+}
+footer ul li h4{
+	color: black;
+	margin-bottom: 2%;
+}
+footer ul li h4 span{
+	padding-bottom: 4px;
+	box-sizing: border-box;
+	border-bottom: 4.5px solid #fff;
+}
+footer ul li a{
+	color: white;
+}
+footer ul li a:hover{
+	color: white;
+	text-decoration: none;
+}
+#f_input{
+	//padding-top: 10px;
+	//padding-bottom: 10px;
+	//margin-top: 5%;
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+	margin-bottom: 2%;
+	border-radius: 3px;
+}
+#f_input i{
+	width: 10%;
+	color: #000;
+	text-align: center;
+}
+#f_input input{
+	border-width: 0px;
+	background: none;outline: none;
+	height: 15px;
+	width: 88%;
+}
+#f_input textarea{
+	border-width: 0px;
+	background: none;outline: none;
+	height: 15px;
+	width: 88%;
+	padding: 0px;
+	padding-bottom: 5px;
+}
+
+footer .flex{
+	display: flex;
+ flex-wrap: wrap;
+}
+
+
+
+
+
+.flex-box{
+	display: flex;
+}
+
+/* Teachers home page ----------------------------------------------------------------------  */
+.main{
+	text-align: center;
+}
+.main img{
+	height:750px;
+}
+.teach1 img{
+	width: 100%;
+	height:390px;
+	
+}
+.teach3 img{
+	width: 100%;
+	height:390px;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;	
+}
+
+/*top courses section*/
+.course-holder{
+	display: flex;
+	flex-wrap: wrap;
+}
+.course-holder .card{
+	width: calc((100% / 4) - 30px);
+	margin: 15px;
+}
+.course-holder .card img{
+	height: 200px;
+}
+.card:hover{
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.flex-box{
+	display: flex;
+}
+.header-btn{
+	margin: 0px 10px;
+}
+.header-home{
+	max-width: 1100px;
+display: flex;
+width: 100%;
+}
+.header-home ul{
+	margin-right: 0px !important;
+}
+
+
+
