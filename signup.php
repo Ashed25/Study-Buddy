@@ -12,16 +12,17 @@ if (isset($_POST['submit'])) {
   $fname = $_POST['fname'];
   $lname = $_POST['lname'];
   $email = $_POST['email'];
-  $userType = $_POST['level']; // Updated variable name
+  // Only Student/Tutor can self-register; never trust the posted role
+  $userType = ($_POST['level'] ?? '') === 'Tutor' ? 'Tutor' : 'Student';
   $password = $_POST['password'];
   $password2 = $_POST['cpassword'];
 
   if ($password == $password2) {
-    // Updated query: Use `Users` table and new column names
-    $sql = "INSERT INTO Users (fname, lname, UserType, email, password) 
-            VALUES ('$fname', '$lname', '$userType', '$email', '$password')";
-    
-    if (mysqli_query($db, $sql)) {
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+    $stmt = $db->prepare("INSERT INTO Users (fname, lname, UserType, email, password) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $fname, $lname, $userType, $email, $hash);
+
+    if ($stmt->execute()) {
       echo "<script type='text/javascript'>alert('$message');
             window.location='login.php';
             </script>";

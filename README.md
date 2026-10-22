@@ -45,6 +45,10 @@ There are three roles. After login, each role goes to its own dashboard.
    git clone https://github.com/Ashed25/Study-Buddy.git
    ```
 3. Create a MySQL database in phpMyAdmin. The main tables are `users`, `courses`, `categories`, `tasks` (lectures), `enrollments`, `user_task` (progress), `rewards`, `feedback` and `withdrawals`.
+   Passwords are stored as bcrypt hashes, so `users.password` must be at least `VARCHAR(255)`:
+   ```sql
+   ALTER TABLE users MODIFY password VARCHAR(255) NOT NULL;
+   ```
 4. Set your database connection details in `admin/inc/db.php`.
 5. Open http://localhost/Study-Buddy.
 

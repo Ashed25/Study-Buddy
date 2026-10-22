@@ -19,24 +19,25 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
   if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
 
-    // Debugging: Print the retrieved row
-    echo "<pre>Debug: Retrieved Row: ";
-    print_r($row);
-    echo "</pre>";
+    $valid = password_verify($password, $row["password"]);
 
-    // Compare plain text passwords
-    if ($password === $row["password"]) {
+    // Accounts created before hashing still hold plain text: accept once, then store a hash
+    if (!$valid && hash_equals($row["password"], $password)) {
+      $valid = true;
+      $hash = password_hash($password, PASSWORD_DEFAULT);
+      $upgrade = $db->prepare("UPDATE users SET password = ? WHERE UserID = ?");
+      $upgrade->bind_param("si", $hash, $row["UserID"]);
+      $upgrade->execute();
+    }
+
+    if ($valid) {
+      session_regenerate_id(true);
       $_SESSION["loggedIn"] = 1;
       $_SESSION["UserID"] = $row["UserID"];
       $_SESSION["fname"] = $row["fname"];
       $_SESSION["lname"] = $row["lname"];
       $_SESSION["UserType"] = $row["UserType"];
       $_SESSION["email"] = $row["email"];
-
-      // Debugging: Print session data
-      echo "<pre>Debug: Session Data: ";
-      print_r($_SESSION);
-      echo "</pre>";
 
       // Redirect based on user type
       if ($row["UserType"] == "Admin") {
